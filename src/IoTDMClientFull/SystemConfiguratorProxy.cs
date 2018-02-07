@@ -75,9 +75,14 @@ namespace Microsoft.Devices.Management
 
         public async Task<IResponse> SendCommandAsync(IRequest command)
         {
+
             var response = await new Task<IResponse>(() => 
             {
-                throw new NotImplementedException();
+                string responseJson = string.Empty;
+                uint responseType = 0;
+                _client.SendRequest(command.Serialize().PayloadAsString, (uint)command.Tag, ref responseJson, ref responseType);
+
+                return Blob.CreateFromJson(responseType, responseJson).MakeIResponse();
             });
 
             if (response.Status != ResponseStatus.Success)
@@ -89,16 +94,7 @@ namespace Microsoft.Devices.Management
 
         public IResponse SendCommand(IRequest command)
         {
-            throw new NotImplementedException();
-
-            /*
-             * var response = _client.SendCommand(command);
-            if (response.Status != ResponseStatus.Success)
-            {
-                ThrowError(response);
-            }
-            return response;
-            */
+            return SendCommandAsync(command).Result;
         }
     }
 }

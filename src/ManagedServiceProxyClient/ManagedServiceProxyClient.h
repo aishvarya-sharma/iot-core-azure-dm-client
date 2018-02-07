@@ -11,7 +11,9 @@ namespace ManagedServiceProxyClient {
 	public ref class ManagedServiceProxy
 	{
 	public:
-		DWORD SendRequest(BSTR request, UINT requestType, BSTR *pResponse, UINT* pResponseType);
+		DWORD SendRequest(String ^Request, unsigned int Requesttype, String ^%Response, unsigned int %ResponseType);
+		
+		//DWORD SendRequest(BSTR request, UINT requestType, BSTR *pResponse, UINT* pResponseType);
 
 		__int64 InitializeProxy();
 	};

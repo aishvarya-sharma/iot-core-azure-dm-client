@@ -3,5 +3,6 @@
 // but are changed infrequently
 
 #pragma once
+#include <atlbase.h>
 
 
