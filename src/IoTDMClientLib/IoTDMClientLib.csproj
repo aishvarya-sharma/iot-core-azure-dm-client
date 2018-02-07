@@ -147,7 +147,7 @@
     </ProjectReference>
     <ProjectReference Include="..\SystemConfiguratorProxy\Client\ServiceConfiguratorProxyClientLib.vcxproj">
       <Project>{0213712b-62e6-5546-8d25-79b90244ffa9}</Project>
-      <Name>SystemConfiguratorProxyClient</Name>
+      <Name>ServiceConfiguratorProxyClientLib</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>aishar</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://microsoft.com </licenseUrl>
+    <projectUrl>http://microsoft.com </projectUrl>
+    <iconUrl>http://microsoft.com </iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Yo</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Tag1 Tag2</tags>
+  </metadata>
+</package>
