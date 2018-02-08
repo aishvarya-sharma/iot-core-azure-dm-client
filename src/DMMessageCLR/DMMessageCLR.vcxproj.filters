@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Models">
+      <UniqueIdentifier>{9647da8f-c8b0-4f30-93ae-c9f8c48e3683}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Models\AllModels.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\AppInstall.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\AppLifecycle.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\AppUninstall.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\CertificateConfiguration.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\CertificateDetails.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\CheckForUpdates.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\DeviceDMStorage.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\DeviceHealthAttestation.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\DeviceInfo.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\ErrorResponse.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\EventTracingConfiguration.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\ExitDM.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\FactoryReset.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\FileTransfer.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\ListApps.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\ModelHelper.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\Policy.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\Reboot.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\StartupApp.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\StatusCodeResponse.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\StringListResponse.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\StringResponse.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\TimeInfo.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\TimeService.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\TpmRequests.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\WifiConfiguration.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\WifiDetails.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\WindowsTelemetry.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\WindowsUpdatePolicy.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\WindowsUpdateRebootPolicy.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\WindowsUpdates.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Blob.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CurrentVersion.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DMGarbageCollectorTempFolder.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DMMessageException.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DMMessageKind.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DMMessageSerialization.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IRequestIResponse.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResponseStatus.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SerializationHelper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DMMessageCLR.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DMMessageCLR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Blob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DMMessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DMMessageHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SerializationHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\ModelsInfo.dat">
+      <Filter>Models</Filter>
+    </None>
+  </ItemGroup>
+</Project>

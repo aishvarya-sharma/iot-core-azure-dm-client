@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Microsoft.Devices.Management</RootNamespace>
+    <AssemblyName>Microsoft.Devices.Management.IoTDMCore</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Handlers\AppxLifeCycleHandler.cs" />
+    <Compile Remove="Handlers\AppxManagement.cs" />
+    <Compile Remove="Handlers\DmAppStoreUpdate.cs" />
+    <Compile Remove="Handlers\EventTracingHandler.cs" />
+    <Compile Remove="Handlers\WifiHandler.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Devices.Client" Version="1.6.2" />
+    <PackageReference Include="Microsoft.Azure.Devices.Shared" Version="1.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DMDataContract\DMDataContract\DMDataContract.csproj" />
+    <ProjectReference Include="..\ManagedServiceProxyClient\ManagedServiceProxyClient.vcxproj" />
+    <ProjectReference Include="..\TestLibrary_Standard\DMMessage_Standard.csproj" />
+  </ItemGroup>
+
+</Project>

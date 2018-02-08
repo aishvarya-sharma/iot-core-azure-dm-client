@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{241582cd-4861-4643-a7a2-21865b779aaf}</ProjectGuid>
+    <Keyword>WindowsRuntimeComponent</Keyword>
+    <RootNamespace>Microsoft.Devices.Management.Message</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.15063.0</WindowsTargetPlatformMinVersion>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset Condition="'$(MSBuildToolsVersion)' == '15.0'">v141</PlatformToolset>
+    <PlatformToolset Condition="'$(MSBuildToolsVersion)' == '14.0'">v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+    <Import Project="..\DMShared\DMShared.vcxitems" Label="Shared" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup>
+    <GenerateManifest>false</GenerateManifest>
+    <TargetName>Microsoft.Devices.Management.Message</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PreprocessorDefinitions>_WINRT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AdditionalUsingDirectories>$(WindowsSDK_WindowsMetadata);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>28204</DisableSpecificWarnings>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Level4</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Level4</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level4</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level4</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Level4</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Level4</WarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <WindowsMetadataFile>$(OutDir)$(TargetName).winmd</WindowsMetadataFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Blob.h" />
+    <ClInclude Include="CurrentVersion.h" />
+    <ClInclude Include="DMMessageException.h" />
+    <ClInclude Include="DMMessageKind.h" />
+    <ClInclude Include="DMMessageSerialization.h" />
+    <ClInclude Include="DMGarbageCollector.h" />
+    <ClInclude Include="IRequestIResponse.h" />
+    <ClInclude Include="Models\AllModels.h" />
+    <ClInclude Include="Models\AppInstall.h" />
+    <ClInclude Include="Models\AppLifecycle.h" />
+    <ClInclude Include="Models\AppUninstall.h" />
+    <ClInclude Include="Models\CertificateConfiguration.h" />
+    <ClInclude Include="Models\CertificateDetails.h" />
+    <ClInclude Include="Models\CheckForUpdates.h" />
+    <ClInclude Include="Models\DeviceDMStorage.h" />
+    <ClInclude Include="Models\DeviceHealthAttestation.h" />
+    <ClInclude Include="Models\DeviceInfo.h" />
+    <ClInclude Include="Models\ErrorResponse.h" />
+    <ClInclude Include="Models\EventTracingConfiguration.h" />
+    <ClInclude Include="Models\ExitDM.h" />
+    <ClInclude Include="Models\FactoryReset.h" />
+    <ClInclude Include="Models\FileTransfer.h" />
+    <ClInclude Include="Models\ListApps.h" />
+    <ClInclude Include="Models\ModelHelper.h" />
+    <ClInclude Include="Models\Policy.h" />
+    <ClInclude Include="Models\Reboot.h" />
+    <ClInclude Include="Models\StartupApp.h" />
+    <ClInclude Include="Models\StatusCodeResponse.h" />
+    <ClInclude Include="Models\StringListResponse.h" />
+    <ClInclude Include="Models\StringResponse.h" />
+    <ClInclude Include="Models\TimeInfo.h" />
+    <ClInclude Include="Models\TimeService.h" />
+    <ClInclude Include="Models\TpmRequests.h" />
+    <ClInclude Include="Models\WifiConfiguration.h" />
+    <ClInclude Include="Models\WifiDetails.h" />
+    <ClInclude Include="Models\WindowsTelemetry.h" />
+    <ClInclude Include="Models\WindowsUpdatePolicy.h" />
+    <ClInclude Include="Models\WindowsUpdateRebootPolicy.h" />
+    <ClInclude Include="Models\WindowsUpdates.h" />
+    <ClInclude Include="ResponseStatus.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SerializationHelper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\SharedUtilities\ETWLogger.cpp" />
+    <ClCompile Include="..\SharedUtilities\Logger.cpp" />
+    <ClCompile Include="..\SharedUtilities\StringUtils.cpp" />
+    <ClCompile Include="DMMessage.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\ModelsInfo.dat" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
